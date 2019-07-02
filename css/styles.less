@@ -3,41 +3,65 @@
 @import './fonts.less';
 @import './grid.less';
 
-/*HEADER*/
+/*BEGIN BODY*/
+body {
+    background-color: rgb(207, 207, 207);
+}
+
+/*END BODY*/
+
+
+/*BEGIN HEADER*/
 #header h2 {
     color: blue;
+
+    p {
+        color: blue;
+    }
 }
 
-#header .nav {
+/*BEGIN NAV-TITLE*/
+.title-nav {
+    font-size: 46px;
     background-color: darkgray;
     font-family: LatoBold;
-    font-size: 20px;
+
+    h1 {
+        color: yellowgreen;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
 }
 
-#header .nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-
-
-#header .nav a:hover {
+.title-nav a:hover {
     text-decoration: underline;
     color: red;
 }
 
-/*CONTENT*/
+/*END NAV-TITLE*/
 
-/*FOOTER*/
+/*END HEADER*/
+
+/*BEGIN CONTENT*/
+/*END CONTENT*/
+
+/*BEGIN FOOTER*/
 .footer .social {
     padding: 4em 0 0 0;
 
-}
-
-.footer .social a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
+        color: darkgreen;
+        font-family: LatoBold;
+    }
 }
 
 .footer .social a:hover {
     text-decoration: underline;
+    color: white;
 }
+
+/*END FOOTER*/

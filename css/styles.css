@@ -1,0 +1,161 @@
+/*IMPORTS STYLES*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+img {
+  border-style: none;
+}
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  -webkit-appearance: button;
+}
+input {
+  font-size: 1em;
+}
+textarea {
+  overflow: auto;
+  font-size: 1.1em;
+}
+[hidden] {
+  display: none;
+}
+/* font-family: "LatoRegular"; */
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/LatoRegular/LatoRegular.eot");
+  src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/LatoRegular.woff") format("woff"), url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "LatoBold"; */
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/LatoBold/LatoBold.eot");
+  src: url("../fonts/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/LatoBold.woff") format("woff"), url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "LatoItalic"; */
+@font-face {
+  font-family: "LatoItalic";
+  src: url("../fonts/LatoItalic/LatoItalic.eot");
+  src: url("../fonts/LatoItalic/LatoItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoItalic/LatoItalic.woff") format("woff"), url("../fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "LatoLight"; */
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/LatoLight/LatoLight.eot");
+  src: url("../fonts/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/LatoLight.woff") format("woff"), url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+  font-family: "LatoBoldItalic";
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot");
+  src: url("../fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"), url("../fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+/* font-family: "LatoLightItalic"; */
+@font-face {
+  font-family: "LatoLightItalic";
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot");
+  src: url("../fonts/LatoLightItalic/LatoLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"), url("../fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+  position: relative;
+}
+.one,
+.one-third,
+.two-third,
+.one-fourth,
+.half {
+  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(50%);
+  }
+  .one-third {
+    width: calc(33.33333333%);
+  }
+  .one-fourth {
+    width: calc(25%);
+  }
+  .two-thirds {
+    width: calc(66.66666667%);
+  }
+  .column {
+    float: left;
+  }
+}
+/*BEGIN BODY*/
+body {
+  background-color: #cfcfcf;
+}
+/*END BODY*/
+/*BEGIN HEADER*/
+#header h2 {
+  color: blue;
+}
+#header h2 p {
+  color: blue;
+}
+/*BEGIN NAV-TITLE*/
+.title-nav {
+  font-size: 46px;
+  background-color: darkgray;
+  font-family: LatoBold;
+}
+.title-nav h1 {
+  color: yellowgreen;
+}
+.title-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.title-nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+/*END NAV-TITLE*/
+/*END HEADER*/
+/*BEGIN CONTENT*/
+/*END CONTENT*/
+/*BEGIN FOOTER*/
+.footer .social {
+  padding: 4em 0 0 0;
+}
+.footer .social a {
+  text-decoration: none;
+}
+.footer .social a:hover {
+  text-decoration: underline;
+}
+/*END FOOTER*/
