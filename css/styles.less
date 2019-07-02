@@ -12,6 +12,10 @@ body {
 
 
 /*BEGIN HEADER*/
+@font_size_header: 20px;
+@background-color_header: green;
+@font_family_header: LatoItalic;
+
 #header h2 {
     color: blue;
 
@@ -21,24 +25,38 @@ body {
 }
 
 /*BEGIN NAV-TITLE*/
-.title-nav {
-    font-size: 46px;
-    background-color: darkgray;
-    font-family: LatoBold;
+.nav-bar(@color_back: rgb(218, 218, 218), @color_text: rgb(82, 30, 30), @size_nav: 16px, @size_title: 14px) {
+    width: 100%;
+    height: 80px;
+    background-color: @color_back;
+    position: relative;
+    margin-bottom: 20px;
+    border: 1px solid @color_back;
+    font-size: @size_nav;
+    color: @color_text;
 
     h1 {
-        color: yellowgreen;
+        position: relative;
+        margin-top: 16px;
+        margin-left: 20px;
+        margin-bottom: 0;
+        font-size: @size_title;
     }
 
-    a {
-        text-decoration: none;
-        color: #ffffff;
+    p {
+        position: relative;
+
+        margin-top: 0;
+        margin-left: 30px;
     }
 }
 
-.title-nav a:hover {
-    text-decoration: underline;
-    color: red;
+.title-nav {
+    .nav-bar(darkgray, white, 30px);
+}
+
+.title-nav2 {
+    .nav-bar(yellow);
 }
 
 /*END NAV-TITLE*/
@@ -57,11 +75,12 @@ body {
         color: darkgreen;
         font-family: LatoBold;
     }
-}
 
-.footer .social a:hover {
-    text-decoration: underline;
-    color: white;
+    a:hover {
+        text-decoration: underline;
+        color: white;
+
+    }
 }
 
 /*END FOOTER*/
