@@ -1,7 +1,7 @@
 /*IMPORTS STYLES*/
-@import './normalize.less';
-@import './fonts.less';
-@import './grid.less';
+@import './normalize';
+@import './fonts';
+@import './grid';
 
 /*BEGIN BODY*/
 body {
@@ -82,14 +82,14 @@ body {
 
     a {
         text-decoration: none;
+        font-family: LatoItalic;
+        color: red;
 
-        font-family: LatoBold;
-    }
+        &:hover {
+            text-decoration: underline;
+            color: darkolivegreen;
 
-    a:hover {
-        text-decoration: underline;
-        color: white;
-
+        }
     }
 }
 
