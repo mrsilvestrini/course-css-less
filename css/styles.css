@@ -135,7 +135,7 @@ body {
   position: relative;
   margin-bottom: 10px;
   border: 1px solid #5d5d5d;
-  font-size: 30px;
+  font-size: 16px;
   color: white;
 }
 .title-nav h1 {
@@ -161,12 +161,12 @@ body {
 .title-nav2 {
   width: 100%;
   height: 80px;
-  background-color: green;
+  background-color: pink;
   position: relative;
   margin-bottom: 10px;
-  border: 1px solid green;
+  border: 1px solid pink;
   font-size: 16px;
-  color: #521e1e;
+  color: blue;
 }
 .title-nav2 h1 {
   position: relative;
@@ -198,10 +198,11 @@ body {
 }
 .footer .social a {
   text-decoration: none;
-  font-family: LatoBold;
+  font-family: LatoItalic;
+  color: red;
 }
 .footer .social a:hover {
   text-decoration: underline;
-  color: white;
+  color: darkolivegreen;
 }
 /*END FOOTER*/
